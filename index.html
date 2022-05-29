@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Roster</title>
+  <style>
+    html {
+      scrollbar-width: none;
+      scrollbar-color: red green;
+    }
+  </style>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css.map">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+<section id="loading"  >
+
+  <div class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</section>
+
+  <header class="header position-relative  vh-100">
+    <div class="bg-overlay position-absolute">
+      <div class="content text-center  position-relative  vh-100">
+        <h5 class="text-white">Welcome</h5>
+        <h1 class="text-white mt-2 element"> </h1>
+        <p class="text-white mt-2 text-center lead subtitle">It is a long established fact that a reader will be of a
+          page when established fact looking at its layout.</p>
+        <button class="btnHeader text-uppercase rounded-pill  mt-4  ">Download Cv</button>
+        <div id="about" class="scroll position-absolute">
+
+        </div>
+      </div>
+
+
+    </div>
+    <nav class=" fixed-top     navbar navbar-expand-lg  w-100  ">
+      <div class="container  ">
+        <a class="navbar-brand fs-3 fw-bolder text-danger" href="#">
+          <img id="logoChange" class="w-50" src="images/logo.png" alt="" srcset="">
+           
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class=" active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLink " aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLink " id="servicespage" aria-current="page" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLink " aria-current="page" href="#client">Client</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLink " aria-current="page" href="#workes">portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLink " aria-current="page" href="#Blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="navLink " aria-current="page" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="colorList position-fixed bg-light">
+      <div class="setting bg-dark position-absolute">
+        <i class="text-white fa fa-cog fa-spin"></i>
+      </div>
+      <div class="list">
+        <h6>Select your color</h6>
+        <ul class="mt-3 list-unstyled d-flex flex-wrap">
+          <li class="color color1"></li>
+          <li class="color color2 bg-black"></li>
+          <li class="color color3 bg-danger"></li>
+          <li class="color color4 bg-success"></li>
+          <li class="color color5 bg-warning"></li>
+          <li class="color color6 bg-info"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="up bg-danger position-fixed">
+      <i class=" fas fa-angle-up"></i>
+    </div>
+    
+    <svg class="svg"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,192C480,203,600,245,720,256C840,267,960,245,1080,218.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+  </header>
+ 
+
+  <section id="about" class="about  section-padding container">
+ 
+    <div class="row">
+      <div class="col-6  ">
+        <img width="90%" class="img-fluid mx-auto d-block img-thumbnail" src="images/about.jpg" alt="">
+      </div>
+      <div class=" col-5">
+        <h1>About Me</h1>
+        <h4 class="mt-4">Hello! <span class="changeSpan text-custom font-weight-bold">I'M Kerri Deo.</span></h4>
+        <p class=" text-muted mt-4">It is a long established fact that a reader will be distracted by the readable
+          content of a page when looking at its layout. </p>
+        <p class=" text-muted mt-2">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        <p class=" text-muted mt-2">There are many variations of passages of Lorem Ipsum available, but the majority
+          have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+          believable.</p>
+
+        <ul class="mb-0 flex-row d-flex  about-social list-inline mt-4">
+          <li class="list-inline-item"><a href="#"><i class=" fab fa-dribbble"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class=" fab fa-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class=" fab fa-linkedin"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class=" fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="services" class="services section-padding ">
+    <div class="contentHeader text-center">
+      <h2>Our Services</h2>
+      <p class="lead  subtitle  m-auto">It is a long established fact that a reader will be of a page when established
+        fact looking at its layout</p>
+    </div>
+    <div class="container">
+
+      <div class="row mt-5">
+
+        <div class="  col-md-4">
+          <div class=" position-relative box">
+            <div class="headBox text-center">
+              <i class="icon fa fa-chart-line"></i>
+              <h5>Graphic Design </h5>
+            </div>
+            <div class="text-center mt-4">
+              <p class="px-4 subtitle text-muted m-auto">There are many variations of passages of but the majority have
+                suffered alteration in some form.</p>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-4">
+          <div class=" position-relative box">
+            <div class="headBox text-center">
+              <i class="icon fa fa-up-right-and-down-left-from-center"></i>
+              <h5>Unlimited Color </h5>
+            </div>
+            <div class="text-center mt-4">
+              <p class="px-4 subtitle text-muted m-auto">There are many variations of passages of but the majority have
+                suffered alteration in some form.</p>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-4">
+          <div class=" position-relative box">
+            <div class="headBox text-center">
+              <i class="icon fa fa-cloud-upload  "></i>
+              <h5>Media Marketing </h5>
+            </div>
+            <div class="text-center mt-4">
+              <p class="px-4 subtitle text-muted m-auto">There are many variations of passages of but the majority have
+                suffered alteration in some form.</p>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-4 mt-3">
+          <div class=" position-relative box">
+            <div class="headBox text-center">
+              <i class="icon fa fa-file-upload "></i>
+              <h5>Unlimited Wifi </h5>
+            </div>
+            <div class="text-center mt-4">
+              <p class="px-4 subtitle text-muted m-auto">There are many variations of passages of but the majority have
+                suffered alteration in some form.</p>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-4 mt-3">
+          <div class=" position-relative box">
+            <div class="headBox text-center">
+              <i class="icon fa fa-layer-group "></i>
+              <h5>Responsive Design </h5>
+            </div>
+            <div class="text-center mt-4">
+              <p class="px-4 subtitle text-muted m-auto">There are many variations of passages of but the majority have
+                suffered alteration in some form.</p>
+            </div>
+          </div>
+        </div>
+        <div class="  col-md-4 my-3">
+          <div class=" position-relative box">
+            <div class="headBox text-center">
+              <i class="icon fa fa-calendar-days "></i>
+              <h5>Easy to customize </h5>
+            </div>
+            <div class="text-center mt-4">
+              <p class="subtitle px-4 text-muted m-auto">There are many variations of passages of but the majority have
+                suffered alteration in some form.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section-padding jop text-center">
+    <h1>I Am Available For Freelancer.</h1>
+    <button class="btnJop text-white border-0">HERE ME!</button>
+  </section>
+
+  <section id="client" class="client section-padding ">
+    <div class="container">
+      <div class=" text-center clientContent">
+        <h1>Our Client</h1>
+        <p class="m-auto subtitle text-muted">It is a long established fact that a reader will be of a page when
+          established fact looking at its layout.</p>
+      </div>
+
+      <div id="carousel" class="mt-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner  ">
+            <div class="carousel-item active text-center">
+              <div class="client-item d-flex flex-column">
+                <i class="fs-1 fa fa-quote-left my-4"></i>
+                <img width="10%" class="img-thumbnail img-fluid m-auto rounded-circle" src="images/testi/testi-1.jpg"
+                  alt="">
+                <p class="lead  m-auto client_review font-italic mt-4 text-center text-muted">" The point of using Lorem
+                  Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                  here."</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <div class="client-item d-flex flex-column">
+                <i class="fs-1 fa fa-quote-left my-4"></i>
+                <img width="10%" class="img-thumbnail img-fluid m-auto rounded-circle" src="images/testi/testi-2.jpg"
+                  alt="">
+                <p class="lead  m-auto client_review font-italic mt-4 text-center text-muted">" The point of using Lorem
+                  Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                  here."</p>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <div class="client-item d-flex flex-column">
+                <i class="fs-1 fa fa-quote-left my-4"></i>
+                <img width="10%" class="img-thumbnail img-fluid m-auto rounded-circle" src="images/testi/testi-3.jpg"
+                  alt="">
+                <p class=" lead  m-auto client_review font-italic mt-4 text-center text-muted">" The point of using
+                  Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                  here."</p>
+              </div>
+            </div>
+          </div>
+          <ol class="carousel-indicators mt-4 position-static">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active border-2"
+              aria-current="true" aria-label="Slide 1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=" border-2" aria-label="Slide 2">
+            </li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=" border-2" aria-label="Slide 3">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="workes" class="section-padding">
+    <div class="container text-center">
+      <div class=" text-center clientContent">
+        <h1>Our Works</h1>
+        <p class="m-auto subtitle text-muted">It is a long established fact that a reader will be of a page when
+          established fact looking at its layout.</p>
+      </div>
+      <div class="navs container text-center ">
+        <ul class="nav nav-pills my-4  d-flex  justify-content-center " id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active text-uppercase" id="pills-home-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+              aria-selected="true">ALL</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link text-uppercase" id="pills-profile-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+              aria-selected="false">SEO</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link text-uppercase" id="pills-contact-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+              aria-selected="false">WORK</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link text-uppercase" id="pills-contact-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-Wordpress" type="button" role="tab" aria-controls="pills-contact"
+              aria-selected="false">Wordpress</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link text-uppercase" id="pills-contact-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-Webdesign" type="button" role="tab" aria-controls="pills-contact"
+              aria-selected="false">Webdesign</a>
+          </li>
+        </ul>
+        <div class="tab-content " id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row">
+              <div class="col-4">
+                <img src="images/works/3.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4">
+                <img src="images/works/client-4.png" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4">
+                <img src="images/works/4.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4 mt-3">
+                <img src="images/works/client-7.png" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4 mt-3">
+                <img src="images/works/5.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4 mt-3">
+                <img src="images/works/20.jpg" class="w-100" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row">
+              <div class="col-4">
+                <img src="images/works/10.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4">
+                <img src="images/works/20.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4">
+                <img src="images/works/3.jpg" class="w-100" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="row">
+              <div class="col-4  ">
+                <img src="images/works/me.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4  ">
+                <img src="images/works/one.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4  ">
+                <img src="images/works/two.png" class="w-100" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-Wordpress" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="row">
+              <div class="col-4  ">
+                <img src="images/blog/blog-1.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4  ">
+                <img src="images/blog/blog-2.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4  ">
+                <img src="images/blog/blog-3.jpg" class="w-100" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-Webdesign" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="row">
+              <div class="col-4  ">
+                <img src="images/works/4.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <div class="col-4  ">
+                <img src="images/works/5.jpg" class="w-100" alt="" srcset="">
+              </div>
+              <!-- <div class="col-4  ">
+                <img src="images/works/6.jpg" class="w-100" alt="" srcset="">
+              </div> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Blog" class="section-padding">
+    <div class="container ">
+      <div class=" text-center clientContent">
+        <h1>Our Works</h1>
+        <p class="m-auto subtitle text-muted">It is a long established fact that a reader will be of a page when
+          established fact looking at its layout.</p>
+      </div>
+      <div class="row mt-5 container   ">
+        <div class="col-md-4  d-flex justify-content-center">
+          <div class="card shadow-sm p-2">
+            <img class="card-img-top" src="images/blog/blog-1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">There are many variations</h5>
+              <p class="h6 text-muted date_blog my-3 ">11 March 2018 <a href="#"
+                  class="text-custom text-decoration-none font-weight-bold">By Kerri</a></p>
+              <p class="card-text text-muted ">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum
+                netus primis fames. Lobortis ultricies.</p>
+              <a href="#" class="text-decoration-none text-dark ">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4  d-flex justify-content-center">
+          <div class="card shadow-sm p-2">
+            <img class="card-img-top" src="images/blog/blog-2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Contrary to popular belief</h5>
+              <p class="h6 text-muted date_blog my-3 ">11 March 2018 <a href="#"
+                  class="text-custom text-decoration-none font-weight-bold">By Kerri</a></p>
+              <p class="card-text text-muted ">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum
+                netus primis fames. Lobortis ultricies.</p>
+              <a href="#" class="text-decoration-none text-dark ">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4  d-flex justify-content-center">
+          <div class="card shadow-sm p-2">
+            <img class="card-img-top" src="images/blog/blog-3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum is not simply</h5>
+              <p class="h6 text-muted date_blog my-3 ">11 March 2018 <a href="#"
+                  class="text-custom text-decoration-none font-weight-bold">By Kerri</a></p>
+              <p class="card-text text-muted ">Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum
+                netus primis fames. Lobortis ultricies.</p>
+              <a href="#" class="text-decoration-none text-dark ">Read More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-padding">
+    <div class="container mb-4">
+      <div class=" text-center clientContent">
+        <h1>Contact Us</h1>
+        <p class="m-auto subtitle text-muted">It is a long established fact that a reader will be of a page when
+          established fact looking at its layout.</p>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="text-center">
+            <div>
+              <i class="iconcontent fa fa-mobile-alt"></i>
+            </div>
+            <div class="mt-3">
+              <h5 class="mb-0 contact_detail-title font-weight-bold">Call Us On</h5>
+              <p class="text-muted">+0201063034637</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center">
+            <div>
+              <i class="iconcontent fa fa-envelope"></i>
+            </div>
+            <div class="mt-3">
+              <h5 class="mb-0 contact_detail-title font-weight-bold">Email Us At</h5>
+              <p class="text-muted ">ahmed.y.elshazly@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-center">
+            <div>
+              <i class="iconcontent fa fa-map-marker-alt"></i>
+            </div>
+            <div class="mt-3">
+              <h5 class="mb-0 contact_detail-title font-weight-bold">Visit Office</h5>
+              <p class="text-muted">Alexandria ,sidi beshr </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="row mt-4 form">
+        <div class="col-6 m-auto">
+
+          <div class="form-group mt-2">
+            <input name="name" id="name" type="text" class="form-control" placeholder="Your Name*" required="">
+          </div>
+
+        </div>
+        <div class="col-6 m-auto">
+
+          <div class="form-group mt-2">
+            <input name="email" id="email" type="email" class="form-control" placeholder="Your Email*" required="">
+          </div>
+        </div>
+        <div class="col-12 m-auto">
+
+          <div class="form-group mt-2">
+            <input type="text" class="form-control" id="subject" placeholder="Your Subject.." required="">         
+           </div>
+
+        </div>
+        <div class="col-12 m-auto">
+
+          <div class="form-group mt-2">
+            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..." spellcheck="false" style="height: 118px;"></textarea>
+          </div>
+
+        </div>
+
+        <div class=" col-lg-12 ">
+          <input type="submit" class="btn btn-custom" value="Send Message">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer  bg-light bg-dark">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-12 ">
+                <div class="text-center  text-white footer-alt">
+                  <ul class="my-3 flex-row d-flex justify-content-center  m-auto about-social list-inline mt-4">
+                    <li class="list-inline-item"><a href="#"><i style="color: #6c757d!important;" class=" fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i style="color: #6c757d!important;"class=" fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i style="color: #6c757d!important;"class=" fab fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i style="color: #6c757d!important;"class=" fab fa-twitter"></i></a></li>
+                  </ul>
+                    <p class="text-muted mb-0"> 2018 - 2020 © Kerri. Design by SRBThemes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>  
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
